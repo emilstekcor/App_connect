@@ -1,0 +1,16 @@
+{
+  "name": "app_connect-monorepo",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "concurrently -c cyan,magenta -n server,client \"pnpm -C server dev\" \"pnpm -C client dev\"",
+    "lint": "eslint \"**/*.{ts,tsx}\"",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "eslint": "^8.57.0",
+    "prettier": "^3.1.1",
+    "typescript": "^5.4.0"
+  }
+}
